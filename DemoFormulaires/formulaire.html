@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+
+</head>
+<body>
+    <h1>Formulaire</h1>
+    <fieldset>
+        <legend>Texte:</legend>
+            <form action="#" method="post">
+            <label for="nom">Nom *</label>
+            <input type="text" id="nom" name="nom" autofocus 
+            required placeholder="Doe"
+            pattern="[A-Za-z]{3,0}" title="Saisissez votre nom, 3 caractères minimum." >
+            <br>
+            </br>
+            <label for="prenom">Prénom *</label>
+            <input type="text" id="prenom" name="prenom" placeholder="John" autofocus required
+            title="Saisissez votre prénom, 3 caractères minimum.">
+            <br>
+            </br>
+            <input type="submit" value="Soumettre le formulaire"/>
+            <input type="reset" value="Annuler">
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Textes particuliers</legend>
+        <form action="#" method="post">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" 
+             placeholder="john.doe@gmail.com" title="Saisissez votre adresse mail.">
+             <br></br>
+
+             <label for="url">Url :</label>
+             <input type="url" name="url" id="url" placeholder="https://www.monsite.fr" 
+             title="Saisissez votre url." size="30">
+             <br></br>
+
+             <label for="tel">Tel :</label>
+             <input type="tel" name="tel" id="tel" placeholder="01 23 45 67 89" pattern="[0]{1}[1-9]{1}[0-9]{8}" 
+             title="Saisissez votre numero de telephone." size="30">
+             <br></br>
+
+             <input type="submit" value="Soumettre le formulaire"/>
+             <input type="reset" value="Annuler">
+            <br></br>
+
+            <label for="mdp">Mot de passe :</label>
+            <input type="password" name="mdp" id="mdp" placeholder="********" pattern="(?=.*/d)(?=.*[a-z](?=.*[A-Z]).{8,}" 
+             title="Saisissez un mot de passe de minimum 8 caractères comportant des lettres en minuscules et majascules, des caractères speciaux et des chiffres " size="30">
+             <br></br>
+
+            <label for="recherche">Recherche :</label>
+            <input type="search" id="recherche" name="recherche" placeholder="Rechercher un terme ici" size="50">
+            <br></br>
+
+            <label for="multi">Commentaires :</label>
+            <textarea name="commentaires" id="commentaires" cols="30" rows="10"></textarea>
+            <!--Ici on laisse bien le textarea collé, on ne revient pas à la ligne sinon il prend en compte le retour à la ligne ou une tabulation-->
+            <input type="submit" value="Soumettre le formulaire"/>
+            <input type="reset" value="Annuler">
+            <br></br>
+
+            <fieldset>
+                <legend>Heures et dates : </legend>
+                <form action="" method="POST">
+                    <label for="heure">Heure : </label>
+                    <input type="time" min="08:00" max="18:00" value="10:00">
+                    <br>
+                    <br>
+        
+                    <label for="date">Date : </label>
+                    <input type="date" 
+                    name="date" 
+                    id="date" 
+                    min="2010-01-01" 
+                    max="2020-12-31"
+                    value="2020-07-14">
+        
+                    <br>
+                    <br>
+        
+                    <label for="dateHeure">Date et heure : </label>
+                    <input type="datetime-local" 
+                    name="dateHeure" 
+                    id="dateHeure">
+        
+                    <br>
+                    <br>
+        
+                    <label for="mois">Mois : </label>
+                    <input type="month" name="mois" id="mois">
+        
+                    <br>
+                    <br>
+        
+                    <label for="semaine">Semaine : </label>
+                    <input type="week" name="semaine" id="semaine">
+        
+                    <br>
+                    <br>
+        
+                    <input type="submit" value="Enregistrer">
+                    <input type="reset" value="Effacer le formulaire">
+                </form>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Choix : </legend>
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <p>Checkbox : </p>
+                    <input type="checkbox" name="valeur1" id="valeur1">
+                    <label for="valeur1">valeur 1</label>
+                    <br>
+                    <br>
+                    <input type="checkbox" name="valeur2" id="valeur2">
+                    <label for="valeur2">valeur 2</label>
+                    <br>
+                    <br>
+                    <input type="checkbox" name="valeur3" id="valeur3" checked>
+                    <label for="valeur3">valeur 3</label>
+                    <br>
+                    <br>
+        
+        
+                    <p>RadioButton : </p>
+                    <input type="radio" name="memeValue" id="value1" value="value1" checked>
+                    <label for="value1">valeur 1</label>
+                    <br>
+                    <br>
+                    <input type="radio" name="memeValue" id="value2" value="value2">
+                    <label for="value2">valeur 2</label>
+                    <br>
+                    <br>
+                    <input type="radio" name="memeValue" id="value3" value="value3">
+                    <label for="value3">valeur 3</label>
+                    <br>
+                    <br>
+        
+        
+                    <p>Select : </p>
+                    <label for="select">Faire un choix dans une liste figée : </label>
+                    <select name="select" id="select">
+                        <option value="valeur1">valeur 1</option>
+                        <option value="valeur2" selected>valeur 2</option>
+                        <option value="valeur3">valeur 3</option>
+                        <option value="valeur4">valeur 4</option>
+                    </select>
+                    <br>
+                    <br>
+        
+        
+                    <p>Datalist : </p>
+                    <label for="liste">Faire un choix dans une liste avec saisie : </label>
+                    <input type="text" list="listeChoix" name="liste" id="liste">
+                    <datalist id="listeChoix">
+                        <option value="valeur1"></option>
+                        <option value="valeur2"></option>
+                        <option value="valeur3"></option>
+                        <option value="valeur4"></option>
+                    </datalist>
+                    <br>
+                    <br>
+        
+        
+                    <p>Couleur : </p>
+                    <label for="couleur">Couleur : </label>
+                    <input type="color" name="couleur" id="couleur">
+                    <br>
+                    <br>
+        
+        
+                    <p>Fichier : </p>
+                    <label for="fichier">Fichier à télécharger : </label>
+                    <input type="file" id="fichier" name="fichier" accept=".jpg, .jpeg, .png">
+                    <!--Faire bien attention à preciser accept-->
+                    <br>
+                    <br>
+        
+        
+                    <input type="submit" value="Enregistrer">
+                    <input type="reset" value="Effacer le formulaire">
+
+
+
+
+        </form>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,77 @@
+/***********************************************/
+/*Selecteur universel                           */
+/***********************************************/
+*{
+    color :blue;
+}
+
+/**************************************************
+                Selecteurs Basiques
+***************************************************/
+h1{
+    color:red;
+}
+
+/*Définition d'une classe css qu'on a appelé vert on utilise .*/
+.vert{
+    color:green;
+}
+
+.gras{
+    font-weight: bold;
+}
+/*Définition d'une css avec l'identifiant on utilise #*/
+#bleu{
+    color:blue;
+}
+
+/********************************/
+/*selecteur d'attribut*/
+/********************************/
+[title]{
+    color:yellowgreen;
+}
+
+/******************/
+/*Pseudo element*/
+div:last-of-type{
+    color:purple;
+}
+
+/**********************/
+/*Pseudo classe*/
+h2:hover{
+    color:red;
+    cursor: pointer;
+}
+
+/*************************************/
+/*Combiné*/
+
+/*Les éléments comportant les classes texte1 et texte2*/
+.texte1,
+.texte2{
+    color:brown;
+}
+
+/*Les éléments comportant la classe textespan dans une section*/
+section .texteSpan{
+    color:orange;
+}
+
+/*Les paragraphes qui possédent un parent comportant une classe sectionTexte*/
+
+.sectionTexte > p{
+    color:black;
+}
+
+
+
+
+
+
+
+
+
+
+

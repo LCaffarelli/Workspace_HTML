@@ -1,0 +1,34 @@
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+div,span{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    color: black;
+    text-align: center;
+    line-height: 3rem;
+}
+
+div{
+    background-color: teal;
+}
+
+span{
+    background-color: coral;
+}
+
+.inlineBlock{
+    display: inline-block;
+    width: 500px;
+}
+
+.displayNone{
+    display: none;
+}
+
+.visibiltyNone{
+    visibility: hidden;
+}

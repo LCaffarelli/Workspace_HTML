@@ -1,0 +1,42 @@
+div{
+    margin: 10px;
+}
+.ecran{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+}
+
+.impression{
+    height: 5cm;
+    width: 5cm;
+    background-color: darkorange;
+}
+
+.viewport{
+    height: 10vh;
+    width: 10vw;
+    background-color: teal;
+}
+
+.texte{
+    font-size: 2em;
+}
+
+.textePixel{
+    font-size: 12px;
+}
+
+.texte2{
+    font-size: 1.5rem;
+}
+
+strong{
+    color: blueviolet;
+    font-size: 3em;
+}
+
+em{
+    color: chartreuse;
+    font-size: 3rem;
+}

@@ -1,0 +1,56 @@
+/*
+    CSS fourni - NE PAS MODIFIER
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0&display=swap');
+
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background: url("./images/woman.jpg") no-repeat, url(./images/fond.PNG) repeat;
+    color: white;
+    height: 300px;
+    margin: 0px;
+    padding: 2%;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 2%;
+    color: rgb(158, 116, 158);
+    font-size: 2.5rem;
+}
+
+.titre {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2%;
+}
+
+.sectionForm {
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.titre h1 {
+    font-size: 4em;
+}
+
+
+
+@media screen and (max-width: 640px) {
+    header {
+        background: url("./images/woman.jpg") no-repeat 25% 15%, url(./images/fond.PNG) repeat;
+        color: white;
+        height: 300px;
+        margin: 0px;
+        padding: 2%;
+    }
+}

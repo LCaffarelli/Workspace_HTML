@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Formulaire</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="formulaire.css">  
+
+    </head>
+    <body>
+        <header>
+            <img src="images/logo-eni.png" alt="Logo de l'école ENI">
+            <div class="titre">
+                <h1>Web côté client</h1>
+            </div>
+        </header>
+       <h2>Formulaire d'inscription</h2>
+
+        <main>
+            <section class="sectionForm">
+                <!--Formulaire à insérer ici-->
+                <fieldset>
+                    <legend>Formulaire :</legend>
+                    <form action="" method="post">
+                        <label for="name">Nom* :</label>
+                        <input class="insert" type="text" id="nom" name="nom" 
+                        autofocus required placeholder="Martin" 
+                        title="Saisissez votre nom, 3 caractères minimum." pattern="[A-Za-z]{2,0}">
+                        <br></br>
+
+                        <label for="prenom">Prénom* :</label>
+                        <input class="insert" type="text" id="prenom" name="prenom" 
+                        required placeholder="Camille"
+                        title="Saisissez votre prénom, 3 caractères minimum" pattern="[A-Za-z]{3,0}">
+                        <br></br>
+
+                        <label for="naissance">Date de naissance : </label>
+                        <input class="insert" type="date" id="date" name="date" min="1900-01-01" max="2022-11-24">
+                        <br></br>
+
+                        <label for="login">Login* :</label>
+                        <input class="insert" type="text" id="login" name="login"
+                        required placeholder="CamilleMartin"
+                        title="Saisissez votre identifiant" >
+                        <br></br>
+
+                        <label for="mdp">Mot de passe* :</label>
+                        <input class="insert" type="password" name="mdp" id="mdp" 
+                        required placeholder="********"
+                        title="Saisissez votre mot de passe" pattern="(?=.*/d)(?=.*[a-z](?=.*[A-Z]).{8,}" >
+                        <br></br>
+
+                        <label for="verificationMdp">Vérification du mot de passe* :</label>
+                        <input class="insert" type="text" name="mdp" id="mdp" 
+                        required placeholder="********"
+                        title="Saisissez votre mot de passe" pattern="(?=.*/d)(?=.*[a-z](?=.*[A-Z]).{8,}" >
+                        <br></br>
+
+                        <label for="Langage">Langage préféré :</label>
+                        <input class="insert" type="text" list="langagePrefere" name="liste" id="liste" 
+                        placeholder="ex: Java">
+                        <datalist id="langagePrefere">
+                            <option value="C#"></option>
+                            <option value="Java"></option>
+                            <option value="Python"></option>
+                            <option value="Fortan"></option>
+                            <option value="C"></option>
+                            <option value="Ruby"></option>
+                            <option value="Perl"></option>
+                            <option value="Cobol"></option>
+                            <option value="Dart"></option>
+                            <option value="Swift"></option>
+                            <option value="Objective-C"></option>
+                            <option value="Kotlin"></option>
+                            <option value="Go"></option>
+                            <option value="Rust"></option>
+                            <option value="JavaScript"></option>
+                            <option value="C++"></option>
+                        </datalist>
+                        <br></br>
+
+                        <div class="boutonRadio">
+                        <input   type="radio" name="statut" id="etudiant" checked>
+                        <label for="etudiant">Etudiant</label>
+                        <br></br>
+                        <input type="radio" name="statut" id="formateur" checked>
+                        <label for="formateur">Formateur</label>
+                        </div>
+                        <br></br>
+
+                        <div class="boutonFormulaire"> 
+                        <input class="bouton" type="submit" id="valider" value="Valider">
+                        <nav>
+                            <a class="bouton" href="accueil.html">Retour à l'accueil</a>
+                        </nav>
+                        <input class="bouton" type="reset" id="annuler" value="Annuler saisie"></div>
+                       
+                        <div class="information">* Champs obligatoires</div>
+                        
+                    </form>
+                </fieldset>
+                
+            </section>
+        </main>
+    </body>
+</html>

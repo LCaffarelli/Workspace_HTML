@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Démo Positionnement - Position</h1>
+
+    <section>
+        <h2>position par défaut</h2>
+        <div>
+            <span class="teal"></span>
+            <span class="purple"></span>
+            <span class="green"></span>
+        </div>
+    </section>
+
+    <section>
+        <h2>relative</h2>
+        <div>
+            <span class="teal"></span>
+            <span class="purple relative"></span>
+            <span class="teal"></span>
+        </div>
+
+    <section>
+        <h2>absolute ( position par rapport à la taille de l'écran)</h2>
+        <div>
+            <span class="teal"></span>
+            <span class="purple absolute"></span>
+            <span class="teal"></span>
+        </div>
+    </section>
+
+    <section>
+        <h2>absolute relative ( position par rapport à l'élement parent &lt;div&gt;</h2>
+        <div class="divRelative">
+            <span class="teal"></span>
+            <span class="purple absolute relative"></span>
+            <span class="teal"></span>
+        </div>
+    </section>
+
+    
+    <section>
+        <h2>fixed</h2>
+        <div>
+            <span class="teal"></span>
+            <span class="purple fixed"></span>
+            <span class="teal"></span>
+        </div>
+    </section>
+
+    <section>
+        <h2>sticky</h2>
+        <div>
+            <span class="teal"></span>
+            <span class="purple sticky"></span>
+            <span class="teal"></span>
+        </div>
+    </section>
+
+    <section class="end"></section>
+</body>
+</html>
