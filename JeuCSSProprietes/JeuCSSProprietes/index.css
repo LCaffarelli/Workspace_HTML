@@ -1,0 +1,114 @@
+body {
+    background-color: #2e3036;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+h2 {
+    background-color: #009090;
+    border: 1px solid #009090;
+    margin-top: 3%;
+}
+
+h2,
+h3,
+p {
+    text-align: center;
+}
+
+fieldset {
+    text-align: center;
+    width: 50%;
+    border-color: teal;
+}
+
+legend {
+    color: teal;
+    font-size: 1.5rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+section {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+select,
+input {
+    margin-left: 1%;
+    width: 250px;
+    font-size: 1.5rem;
+    margin-bottom: 1%;
+}
+
+img {
+    width: 5%;
+}
+
+code a {
+    color: #009090;
+    font-size: 1.3rem;
+}
+
+.rep {
+    margin-bottom: 5%;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+}
+
+.retour {
+    color: #009090;
+}
+
+.question {
+    border-bottom: 1px solid black;
+    border-spacing: 0px 100px 0px 100px;
+}
+
+.time-zone {
+    position: fixed;
+}
+
+.red {
+    color: red;
+    font-size: 2rem;
+}
+
+.orange {
+    color: orange;
+    font-size: 1.5rem;
+}
+
+.page-number {
+    display: none;
+}
+
+a.bouton,
+button {
+    background-color: teal;
+    color: white;
+    border: 1px solid teal;
+    border-radius: 3px;
+    padding: 0.5%;
+}
+
+a.bouton:hover {
+    background-color: #009090;
+}
+
+a[target="_blank"]::after {
+    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+    margin: 0 3px 0 5px;
+}
